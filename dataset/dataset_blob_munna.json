@@ -1,0 +1,21 @@
+{
+	"name": "dataset_blob_munna",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blob_lnk_servc_munna",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "munna-trng-cntnr"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

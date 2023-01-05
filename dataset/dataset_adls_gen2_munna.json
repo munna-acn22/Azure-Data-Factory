@@ -1,0 +1,42 @@
+{
+	"name": "dataset_adls_gen2_munna",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adls_lnk_servc_munna",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Iris.csv",
+				"folderPath": "input",
+				"fileSystem": "adls-cntnr-training"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
